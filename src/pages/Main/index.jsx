@@ -1,7 +1,8 @@
 import React from 'react';
+import MainLayout from '../../layouts/MainLayout'
 
 export default function Main(props) {
     return <>
-        <h1>Main</h1>
+        <MainLayout></MainLayout>
     </>;
 }
