@@ -1,0 +1,42 @@
+.p-0{
+    padding: 0px !important;
+}
+
+.m-0{
+    margin: 0px !important;
+}
+
+.mx-0{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.all-x{
+    height: 100% !important;
+}
+
+.header{
+    padding: 30px 20px 50px 20px;
+}
+
+.sidenav-btn{
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.sidenav-btn > a{
+    font-weight: 500;
+    color: #0277bd;
+    margin: auto;
+}
+
+.sidenav-btn:hover{
+    background-color: #0277bd;
+}
+
+.sidenav-btn:hover > a{
+    font-weight: 500;
+    color: #fafafa;
+    margin: auto;
+}
