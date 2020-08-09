@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import './style.css';
 
 import Navbar from '../../components/Navbar'
@@ -12,11 +13,11 @@ export default function MainLayout(props) {
                     <div className="col s12 all-x">
                         <div className="card grey lighten-5 all-x m-0">
                             <div className="card-title header center">
-                                <img src={vegetable} alt="vegetable" width="50px"/>
+                                <img src={vegetable} alt="vegetable" width="50px" />
                             </div>
                             <ul className="all-x">
                                 <li className="sidenav-btn hoverable valign-wrapper ">
-                                    <a>Pacientes</a>
+                                    <NavLink to='/pacientes'>Pacientes</NavLink>
                                 </li>
                                 <li className="sidenav-btn hoverable valign-wrapper">
                                     <a>Recetas</a>
