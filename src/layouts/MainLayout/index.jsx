@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 import Navbar from '../../components/Navbar'
+import vegetable from '../../assets/vegetable.svg'
 
 export default function MainLayout(props) {
     return <>
@@ -10,9 +11,9 @@ export default function MainLayout(props) {
                 <div className="row all-x mx-0">
                     <div className="col s12 all-x">
                         <div className="card grey lighten-5 all-x m-0">
-                            <div className="card-title header">
-                                Healthy
-                                </div>
+                            <div className="card-title header center">
+                                <img src={vegetable} alt="vegetable" width="50px"/>
+                            </div>
                             <ul className="all-x">
                                 <li className="sidenav-btn hoverable valign-wrapper ">
                                     <a>Pacientes</a>
