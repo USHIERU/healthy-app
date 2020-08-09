@@ -14,7 +14,8 @@ export default function Main(props) {
                                 <div className="col s12">
                                     <PersonCard name="Amabelle	Helian" img="https://thispersondoesnotexist.com/image"/>
                                     <PersonCard name="Elbertine	Cranney" img="https://thispersondoesnotexist.com/image"/>
-                                    <PersonCard name="Derrick	Tosspell" img="https://thispersondoesnotexist.com/image"/>
+                                    <PersonCard name="Amabelle	Helian" img="https://thispersondoesnotexist.com/image"/>
+                                    <PersonCard name="Elbertine	Cranney" img="https://thispersondoesnotexist.com/image"/>
                                 </div>
                             </div>
                         </Card>
@@ -22,7 +23,7 @@ export default function Main(props) {
                     <div className="col s4">
                     </div>
                     <div className="col s4">
-                        
+
                     </div>
                 </div>
             </div>
@@ -32,7 +33,7 @@ export default function Main(props) {
 
 function PersonCard(props) {
     return <>
-        <div class="card-panel grey lighten-5 z-depth-1 m-card">
+        <div class="card-panel grey lighten-5 z-depth-1 m-card hoverable">
             <div class="row valign-wrapper" style={{ marginBottom: 0 }}>
                 <div class="col s3">
                     <img src={props.img} class="circle responsive-img" />

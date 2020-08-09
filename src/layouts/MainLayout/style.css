@@ -27,12 +27,12 @@
 
 .sidenav-btn > a{
     font-weight: 500;
-    color: #0277bd;
+    color: #00C853;
     margin: auto;
 }
 
 .sidenav-btn:hover{
-    background-color: #0277bd;
+    background-color: #00C853;
 }
 
 .sidenav-btn:hover > a{
