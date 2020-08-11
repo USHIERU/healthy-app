@@ -1,11 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
 import './style.css';
+import { NavLink } from "react-router-dom";
 
 import Navbar from '../../components/Navbar'
 import vegetable from '../../assets/vegetable.svg'
 
 export default function MainLayout(props) {
+
     return <>
         <div className="row all-x mx-0">
             <div className="col s1 p-0 all-x">
@@ -16,17 +17,17 @@ export default function MainLayout(props) {
                                 <img src={vegetable} alt="vegetable" width="50px" />
                             </div>
                             <ul className="all-x">
-                                <li className="sidenav-btn hoverable valign-wrapper ">
-                                    <NavLink to='/pacientes'>Pacientes</NavLink>
+                                <li className="sidenav-btn valign-wrapper">
+                                    <NavLink to={'/pacientes'} className="center hoverable">pacientes</NavLink>
                                 </li>
-                                <li className="sidenav-btn hoverable valign-wrapper">
-                                    <a>Recetas</a>
+                                <li className="sidenav-btn valign-wrapper">
+                                    <a className="center hoverable">Recetas</a>
                                 </li>
-                                <li className="sidenav-btn hoverable valign-wrapper">
-                                    <a>Citas</a>
+                                <li className="sidenav-btn valign-wrapper">
+                                    <a className="center hoverable">Citas</a>
                                 </li>
-                                <li className="sidenav-btn hoverable valign-wrapper">
-                                    <a>Historial</a>
+                                <li className="sidenav-btn valign-wrapper">
+                                    <a className="center hoverable">Historial</a>
                                 </li>
                             </ul>
                         </div>

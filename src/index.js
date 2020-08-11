@@ -9,6 +9,7 @@ import { getSession } from './session';
 
 import Login from './pages/Login';
 import Main from './pages/Main';
+import Pacientes from './pages/Pacientes';
 
 
 ReactDOM.render(
@@ -17,6 +18,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/" exact >
           {getSession() ? <Main /> : <Login />}
+        </ Route>
+        <Route exact path={`/pacientes`}>
+          <Pacientes />
         </ Route>
       </Switch>
     </Router>

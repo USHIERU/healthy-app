@@ -19,24 +19,33 @@
     padding: 30px 20px 50px 20px;
 }
 
-.sidenav-btn{
-    height: 40px;
-    border-radius: 5px;
-    cursor: pointer
-}
-
 .sidenav-btn > a{
     font-weight: 500;
     color: #00C853;
-    margin: auto;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding-top: 8px;
 }
 
-.sidenav-btn:hover{
-    background-color: #00C853;
+.sidenav-btn{
+    height: 40px;
 }
 
 .sidenav-btn:hover > a{
+    border-radius: 5px;
+    background-color: #00C853;
     font-weight: 500;
     color: #fafafa;
-    margin: auto;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding-top: 8px;
+}
+
+.activeLink{
+    background-color: #00C853;
+    font-weight: 500;
+    color: #fafafa;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding-top: 8px;
 }
