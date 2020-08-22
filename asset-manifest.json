@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/healthy-app/static/css/main.5bf95be6.chunk.css",
+    "main.js": "/healthy-app/static/js/main.76f3582e.chunk.js",
+    "main.js.map": "/healthy-app/static/js/main.76f3582e.chunk.js.map",
+    "runtime-main.js": "/healthy-app/static/js/runtime-main.89af4818.js",
+    "runtime-main.js.map": "/healthy-app/static/js/runtime-main.89af4818.js.map",
+    "static/css/2.4e8fb8c5.chunk.css": "/healthy-app/static/css/2.4e8fb8c5.chunk.css",
+    "static/js/2.89b5abd2.chunk.js": "/healthy-app/static/js/2.89b5abd2.chunk.js",
+    "static/js/2.89b5abd2.chunk.js.map": "/healthy-app/static/js/2.89b5abd2.chunk.js.map",
+    "index.html": "/healthy-app/index.html",
+    "precache-manifest.a71b9f249175a06b93a016001e269fb9.js": "/healthy-app/precache-manifest.a71b9f249175a06b93a016001e269fb9.js",
+    "service-worker.js": "/healthy-app/service-worker.js",
+    "static/css/2.4e8fb8c5.chunk.css.map": "/healthy-app/static/css/2.4e8fb8c5.chunk.css.map",
+    "static/css/main.5bf95be6.chunk.css.map": "/healthy-app/static/css/main.5bf95be6.chunk.css.map",
+    "static/js/2.89b5abd2.chunk.js.LICENSE.txt": "/healthy-app/static/js/2.89b5abd2.chunk.js.LICENSE.txt",
+    "static/media/material-icons.css": "/healthy-app/static/media/MaterialIcons-Regular.e79bfd88.eot",
+    "static/media/We-take-care-of-health.svg": "/healthy-app/static/media/We-take-care-of-health.25560fbb.svg",
+    "static/media/vegetable.svg": "/healthy-app/static/media/vegetable.b6e1c2f1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89af4818.js",
+    "static/css/2.4e8fb8c5.chunk.css",
+    "static/js/2.89b5abd2.chunk.js",
+    "static/css/main.5bf95be6.chunk.css",
+    "static/js/main.76f3582e.chunk.js"
+  ]
+}
