@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Dropdown({ label, options, autoclose = true}) {
+export default function Dropdown({ label, options, autoclose = true }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return <>
@@ -8,7 +8,7 @@ export default function Dropdown({ label, options, autoclose = true}) {
             {label}
         </button>
         {isOpen &&
-            <div onClick={() => autoclose && setIsOpen(prevValue => !prevValue)} className="absolute right-0 sm:right-auto mt-2 w-48 shadow-lg bg-gray-100 rounded-lg text-center">
+            <div onClick={() => autoclose && setIsOpen(prevValue => !prevValue)} className="absolute right-0 xl:right-auto mt-2 w-48 shadow-lg bg-gray-100 rounded-lg text-center">
                 {options && options.map(option => option)}
             </div>
         }
