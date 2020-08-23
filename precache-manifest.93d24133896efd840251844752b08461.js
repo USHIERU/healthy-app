@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3a7f77a49aa7cc8c46a5be729229a7d",
+    "revision": "1b96d4e10c8cbfc84453666335ec7b18",
     "url": "/healthy-app/index.html"
   },
   {
-    "revision": "5b2b7e14c73a8086de9d",
+    "revision": "2c96a0201182b0d1f691",
     "url": "/healthy-app/static/css/2.4e8fb8c5.chunk.css"
   },
   {
-    "revision": "47221852c33f54b9d0a9",
+    "revision": "69e9b02d4ef8ac0c9e8a",
     "url": "/healthy-app/static/css/main.5bf95be6.chunk.css"
   },
   {
-    "revision": "5b2b7e14c73a8086de9d",
-    "url": "/healthy-app/static/js/2.160ddf3d.chunk.js"
+    "revision": "2c96a0201182b0d1f691",
+    "url": "/healthy-app/static/js/2.4c7b4f2f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/healthy-app/static/js/2.160ddf3d.chunk.js.LICENSE.txt"
+    "url": "/healthy-app/static/js/2.4c7b4f2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "47221852c33f54b9d0a9",
-    "url": "/healthy-app/static/js/main.06ca0cf5.chunk.js"
+    "revision": "69e9b02d4ef8ac0c9e8a",
+    "url": "/healthy-app/static/js/main.f9606269.chunk.js"
   },
   {
     "revision": "6f1a771482fc932f15a3",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "25560fbb2e6d4f6285a4912f7b732ddb",
     "url": "/healthy-app/static/media/We-take-care-of-health.25560fbb.svg"
+  },
+  {
+    "revision": "52940737328307b97994f0486f8e14e5",
+    "url": "/healthy-app/static/media/online doctor.52940737.svg"
   },
   {
     "revision": "b6e1c2f15edc731746081104021dfdc9",
