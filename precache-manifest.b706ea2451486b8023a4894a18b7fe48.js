@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1412e9c93f459fefbecb1319347e580b",
+    "revision": "b3a7f77a49aa7cc8c46a5be729229a7d",
     "url": "/healthy-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/healthy-app/static/css/2.4e8fb8c5.chunk.css"
   },
   {
-    "revision": "8f9204e1af76edc6fc5e",
+    "revision": "47221852c33f54b9d0a9",
     "url": "/healthy-app/static/css/main.5bf95be6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/healthy-app/static/js/2.160ddf3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f9204e1af76edc6fc5e",
-    "url": "/healthy-app/static/js/main.babe48b1.chunk.js"
+    "revision": "47221852c33f54b9d0a9",
+    "url": "/healthy-app/static/js/main.06ca0cf5.chunk.js"
   },
   {
     "revision": "6f1a771482fc932f15a3",
