@@ -4,16 +4,9 @@ import Navbar from '../../components/Navbar'
 import WelcomeBaner from '../../components/WelcomeBaner'
 import Dropdown from '../../components/Dropdown'
 
-import { setSession } from '../../services/session'
+import { deleteSession } from '../../services/session'
 
-export default function Home() {
-
-    const handdleLogin = (event) => {
-        event.preventDefault();
-        setSession('uzielcocolan@gmail.com');
-        window.location = '/';
-    }
-
+export default function Admin() {
     const OPTIONS = [
         <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"> Option </a>,
         <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"> Option </a>,
@@ -21,13 +14,13 @@ export default function Home() {
     ]
 
     const navOptions = [
-        <Dropdown label={'Options'} options={OPTIONS} />,
-        <Dropdown label={'Options'} options={OPTIONS} />,
+        <Dropdown label={'Customers'} options={OPTIONS} />,
+        <Dropdown label={'Recipes'} options={OPTIONS} />,
         <Dropdown label={'Options'} options={OPTIONS} />
     ]
 
     const loginForm = [
-        <form onSubmit={handdleLogin} className="flex flex-wrap m-3">
+        <form className="flex flex-wrap m-3">
             <div className="w-full text-left">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                     Email
@@ -50,11 +43,7 @@ export default function Home() {
         <Navbar
             NavigationOptions={navOptions}
             sidebarOptions={loginForm}
-            lastButton={<Dropdown
-                label={<button className="text-white font-bold py-2 px-10 rounded-full bg-green-500">Login</button>}
-                options={loginForm}
-                autoclose={false}
-            />}
+            lastButton={<a onClick={() => { deleteSession(); window.location = '/'; }} className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer">Sign out</a>}
         />
         <div className="mx-5 sm:mx-12 lg:mx-20 xl:mx-64">
             <WelcomeBaner />

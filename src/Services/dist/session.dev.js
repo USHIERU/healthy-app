@@ -1,7 +1,11 @@
 "use strict";
 
+function setSession(correo) {
+  document.cookie = "sxs=".concat(correo);
+}
+
 function isSession() {
-  var data = 'sxs=;data=uziel;';
+  var data = document.cookie;
   var find = false;
   var array = data.split(';');
   var array2 = array.map(function (e) {
@@ -13,4 +17,12 @@ function isSession() {
   return find;
 }
 
-console.log(isSession());
+function deleteSession() {
+  document.cookie = "sxs=";
+}
+
+module.exports = {
+  setSession: setSession,
+  isSession: isSession,
+  deleteSession: deleteSession
+};
