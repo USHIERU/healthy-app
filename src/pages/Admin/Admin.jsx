@@ -8,9 +8,9 @@ import { deleteSession } from '../../services/session'
 
 export default function Admin() {
     const OPTIONS = [
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"> Option </a>,
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"> Option </a>,
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"> Option </a>
+        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>,
+        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>,
+        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>
     ]
 
     const navOptions = [
@@ -42,7 +42,7 @@ export default function Admin() {
     return <>
         <Navbar
             NavigationOptions={navOptions}
-            sidebarOptions={loginForm}
+            sidebarOptions={[...OPTIONS, <a onClick={() => { deleteSession(); window.location = '/'; }} className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> <i class="material-icons">exit_to_app</i> </a>]}
             lastButton={<a onClick={() => { deleteSession(); window.location = '/'; }} className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer">Sign out</a>}
         />
         <div className="mx-5 sm:mx-12 lg:mx-20 xl:mx-64">

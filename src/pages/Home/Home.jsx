@@ -10,7 +10,7 @@ export default function Home() {
 
     const handdleLogin = (event) => {
         event.preventDefault();
-        setSession('uzielcocolan@gmail.com');
+        setSession('Session');
         window.location = '/';
     }
 
