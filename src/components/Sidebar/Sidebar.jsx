@@ -19,7 +19,11 @@ export default function Sidebar({ header, options }) {
                             <div className="w-32 h-1 bg-green-500 rounded-full mb-5" />
                         </div> :
                         <div className="w-32 h-1 bg-green-500 rounded-full mb-5 mt-32" />}
-                    {options && options.map(option => option)}
+
+                    {options && options.map(option =>
+                        <div className="pl-3 py-1 font-medium" onClick={() => setIsOpen(prevValue => !prevValue)}>
+                            {option}
+                        </div>)}
                 </div>
             </>
         }

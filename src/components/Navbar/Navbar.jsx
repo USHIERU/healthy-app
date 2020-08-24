@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 import Sidebar from '../Sidebar';
 
@@ -8,7 +9,9 @@ export default function Navbar({ NavigationOptions, sidebarOptions, lastButton, 
     return <>
         <div className="flex justify-center py-10 -px-2">
             <div className="w-9/12 md:w-1/6 lg:w-1/12">
-                <img src={icon} alt="vegetable" className="h-10 mx-auto" />
+                <NavLink to="/">
+                    <img src={icon} alt="vegetable" className="h-10 mx-auto" />
+                </NavLink>
             </div>
             <div className="w-1/12 md:hidden">
                 {sidebar && <Sidebar options={sidebarOptions} />}

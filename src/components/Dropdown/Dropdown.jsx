@@ -8,7 +8,7 @@ export default function Dropdown({ label, options, autoclose = true }) {
             {label}
         </button>
         {isOpen &&
-            <div onClick={() => autoclose && setIsOpen(prevValue => !prevValue)} className="absolute right-0 xl:right-auto mt-2 w-48 shadow-lg bg-gray-100 rounded-lg">
+            <div onClick={() => autoclose && setIsOpen(prevValue => !prevValue)} onMouseLeave={() => autoclose && setIsOpen(prevValue => !prevValue)} on className="z-10 absolute right-0 lg:right-auto mt-2 w-48 shadow-lg bg-gray-100 rounded-lg">
                 {options && options.map(option => option)}
             </div>
         }

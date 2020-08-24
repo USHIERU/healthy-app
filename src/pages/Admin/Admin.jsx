@@ -1,52 +1,61 @@
 import React from 'react';
+import {
+    Switch,
+    Route,
+    NavLink
+} from "react-router-dom";
 
+import Patients from './Patients'
 import Navbar from '../../components/Navbar'
-import WelcomeBaner from '../../components/WelcomeBaner'
+import Baner from '../../components/Baner'
 import Dropdown from '../../components/Dropdown'
+
+import img from '../../assets/online doctor.svg'
 
 import { deleteSession } from '../../services/session'
 
 export default function Admin() {
     const OPTIONS = [
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>,
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>,
-        <a className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </a>
-    ]
+        <p className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </p>,
+        <p className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </p>,
+        <p className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> Option </p>
+    ];
 
     const navOptions = [
-        <Dropdown label={'Customers'} options={OPTIONS} />,
+        <NavLink to="/Patients" className="relative font-bold text-gray-800 hover:text-green-500"> Patients </NavLink>,
         <Dropdown label={'Recipes'} options={OPTIONS} />,
         <Dropdown label={'Options'} options={OPTIONS} />
-    ]
+    ];
 
-    const loginForm = [
-        <form className="flex flex-wrap m-3">
-            <div className="w-full text-left">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                    Email
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" />
-            </div>
-            <div className="w-full text-left">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                    Password
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" />
-            </div>
-            <div className="w-full">
-                <button type="submit" className="bg-green-500 font-bold text-white py-1 px-8 rounded-full mt-2">Sign In</button>
-            </div>
-        </form>
+    const banerContent = <>
+        <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-green-500">We Help You Keep Your Patients Healthy</h2>
+        <div className="w-full h-1 bg-green-500 rounded-full mb-5" />
+        <p className="text-justify mb-5 text-gray-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores adipisci eius maxime necessitatibus, esse optio obcaecati tempore exercitationem ipsam repellendus ea at! Enim at dolorum impedit exercitationem harum sint?</p>
+        <button className="bg-green-500 rounded-full text-white font-bold py-2 px-10 cursor-pointer">Explorer</button>
+    </>;
+
+    const sidebarOptions = [
+        <NavLink to="/Patients" className="block"> Patients </NavLink>,
+        <div className="w-full h-px bg-green-500 rounded-full" />,
+        <p onClickCapture={() => { deleteSession(); window.location = process.env.REACT_APP_BASE_HREF; }}> Sign out </p>
     ];
 
     return <>
         <Navbar
             NavigationOptions={navOptions}
-            sidebarOptions={[...OPTIONS, <a onClick={() => { deleteSession(); window.location = '/'; }} className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer text-center"> <i class="material-icons">exit_to_app</i> </a>]}
-            lastButton={<a onClick={() => { deleteSession(); window.location = '/'; }} className="block py-2 rounded-lg text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer">Sign out</a>}
+            sidebarOptions={sidebarOptions}
+            lastButton={<button onClick={() => { deleteSession(); window.location = process.env.REACT_APP_BASE_HREF; }} className="px-5 py-2 rounded-full text-gray-800 hover:bg-green-500 hover:text-white cursor-pointer"><i className="material-icons">exit_to_app</i></button>}
         />
-        <div className="mx-5 sm:mx-12 lg:mx-20 xl:mx-64">
-            <WelcomeBaner />
-        </div>
+        <Switch>
+            <Route path='/patients' component={Patients} />
+            <Route path='/'>
+                <div className="mx-5 sm:mx-12 lg:mx-20 xl:mx-64">
+                    <Baner
+                        content={banerContent}
+                        img={img}
+                    />
+                </div>
+            </Route>
+        </Switch>
     </>;
 }
