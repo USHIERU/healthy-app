@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/healthy-app/static/css/main.5bf95be6.chunk.css",
-    "main.js": "/healthy-app/static/js/main.f9606269.chunk.js",
-    "main.js.map": "/healthy-app/static/js/main.f9606269.chunk.js.map",
+    "main.js": "/healthy-app/static/js/main.b6c78e4a.chunk.js",
+    "main.js.map": "/healthy-app/static/js/main.b6c78e4a.chunk.js.map",
     "runtime-main.js": "/healthy-app/static/js/runtime-main.89af4818.js",
     "runtime-main.js.map": "/healthy-app/static/js/runtime-main.89af4818.js.map",
     "static/css/2.4e8fb8c5.chunk.css": "/healthy-app/static/css/2.4e8fb8c5.chunk.css",
-    "static/js/2.4c7b4f2f.chunk.js": "/healthy-app/static/js/2.4c7b4f2f.chunk.js",
-    "static/js/2.4c7b4f2f.chunk.js.map": "/healthy-app/static/js/2.4c7b4f2f.chunk.js.map",
+    "static/js/2.e70f68ad.chunk.js": "/healthy-app/static/js/2.e70f68ad.chunk.js",
+    "static/js/2.e70f68ad.chunk.js.map": "/healthy-app/static/js/2.e70f68ad.chunk.js.map",
     "index.html": "/healthy-app/index.html",
-    "precache-manifest.93d24133896efd840251844752b08461.js": "/healthy-app/precache-manifest.93d24133896efd840251844752b08461.js",
+    "precache-manifest.b91c8309f531af690c28813f0d8a327b.js": "/healthy-app/precache-manifest.b91c8309f531af690c28813f0d8a327b.js",
     "service-worker.js": "/healthy-app/service-worker.js",
     "static/css/2.4e8fb8c5.chunk.css.map": "/healthy-app/static/css/2.4e8fb8c5.chunk.css.map",
     "static/css/main.5bf95be6.chunk.css.map": "/healthy-app/static/css/main.5bf95be6.chunk.css.map",
-    "static/js/2.4c7b4f2f.chunk.js.LICENSE.txt": "/healthy-app/static/js/2.4c7b4f2f.chunk.js.LICENSE.txt",
+    "static/js/2.e70f68ad.chunk.js.LICENSE.txt": "/healthy-app/static/js/2.e70f68ad.chunk.js.LICENSE.txt",
     "static/media/material-icons.css": "/healthy-app/static/media/MaterialIcons-Regular.e79bfd88.eot",
     "static/media/We-take-care-of-health.svg": "/healthy-app/static/media/We-take-care-of-health.25560fbb.svg",
     "static/media/online doctor.svg": "/healthy-app/static/media/online doctor.52940737.svg",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.89af4818.js",
     "static/css/2.4e8fb8c5.chunk.css",
-    "static/js/2.4c7b4f2f.chunk.js",
+    "static/js/2.e70f68ad.chunk.js",
     "static/css/main.5bf95be6.chunk.css",
-    "static/js/main.f9606269.chunk.js"
+    "static/js/main.b6c78e4a.chunk.js"
   ]
 }
